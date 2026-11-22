@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* La app es de tema claro (paleta violeta/lavanda): no hereda el modo oscuro
+   del sistema, para que la experiencia sea consistente en todos los equipos. */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Regla global de formularios: el texto escrito siempre en casi negro y el
+   placeholder en gris medio (legible, sin competir con el valor real). */
+@layer base {
+  input,
+  select,
+  textarea {
+    color: #111827; /* gray-900: texto negro al escribir */
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #6b7280; /* gray-500: visible pero claramente secundario */
+    opacity: 1; /* anula la opacidad reducida del navegador */
+  }
+}
