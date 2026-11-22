@@ -104,6 +104,10 @@ Para llevarla a producción:
 2. Definir `DATABASE_URL` en el entorno del proveedor de hosting.
 3. `pnpm build && pnpm start` (o la plataforma de su elección: Vercel, Railway, un VPS con proxy inverso).
 
+## Informe del proyecto
+
+El informe final del proyecto se encuentra en la carpeta [`docs/`](./docs/).
+
 ## Autoría
 
 Proyecto académico — Actividad 4, electiva *Desarrollo de aplicaciones web*, Corporación Universitaria Iberoamericana (2026).
