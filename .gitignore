@@ -44,3 +44,6 @@ next-env.d.ts
 src/generated
 dev.db
 *.db-journal
+
+# Variables de entorno: se versiona el ejemplo, no el archivo real
+!.env.example
